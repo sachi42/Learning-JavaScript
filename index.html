@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>My js file</title>
+    </head>
+
+    <!--Script tag for internal js-->
+    <body>
+        <h1 id="test">Tester</h1>
+        <h1 id="test">Tester</h1><!--printed as it is-->
+
+        <script>
+             alert("Hello World");//give alert message
+             prompt("Enter your name:");//wants input from user
+             document.write("<h1>Time to learn JS</h1>");//prints directly in the page
+             document.getElementById("test").innerHTML="Time to learn JavaScript";//to change the contents of the DOM use innerHTML 
+             //combined with the element
+             /*console provides debugging information for HTML, CSS and JS*/
+             //in programming, looking for and correcting errors is called as debugging.
+             console.log("Leave a secret message");
+        </script>
+
+
+        <p>What if you have two elements with id="test"?</p><!--only one id is there and when second is also used with same name 
+            then only first one is changed-->
+        <noscript>Your browser does'nt have or support JS</noscript>
+    </body>
+</html>
