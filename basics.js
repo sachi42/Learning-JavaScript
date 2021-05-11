@@ -8,4 +8,8 @@
  HTML element using innerHTML()
  the browser console using console.log() */
 
- 
+ /*Variables-to store data
+ var keyword is used basically three -consists of letters, digits, underscore and dollar sign
+ can not start with digits and are case-sensitive 
+ var, const and let
+ */
