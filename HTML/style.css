@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    background: radial-gradient(rgb(126, 236, 218), rgb(113, 198, 231), rgb(77, 195, 231), rgb(27, 153, 226));
+}
+.container {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 49vh;
+    height: 55vh;
+}
+.row {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 49vh;
+    height: 5.5vh;
+    box-shadow: 0px 1px 6px 1px rgb(102, 102, 102);
+}
+.col {
+    width: 23.333vh;
+    z-index: 1;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+#progress {
+    width: 24vh;
+    height: 100%;
+    position: absolute;
+    background-color: magenta;
+    transition: 1.2s ease-in;
+    -webkit-transition: 1.2s ease-in;
+    -moz-transition: 1.2s ease-in;
+    -ms-transition: 1.2s ease-in;
+    -o-transition: 1.2s ease-in;
+}
+
+#progress::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    border-left: 20px solid magenta;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+.container form {
+    position: absolute;
+    top: 11vh;
+    left: 5.5vh;
+    width: 38.25vh;
+    transition: 0.7s ease-in;
+    -webkit-transition: 0.7s ease-in;
+    -moz-transition: 0.7s ease-in;
+    -ms-transition: 0.7s ease-in;
+    -o-transition: 0.7s ease-in;
+}
+
+form h3 {
+    text-align: center;
+    margin-bottom: 4vh;
+    font-weight: 900;
+    color: gray;
+}
+
+.my-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form2 {
+    left: 61.5vh;
+}
+form input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0px;
+    border-bottom: 1px solid rgb(80, 80, 80);
+}
+
+.btn-box {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.btn-box button {
+    width: 16.4vh;
+    height: 4.8vh;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: magenta;
+    outline: none;
+    box-shadow: 0 6px #999;
+}
+
+.btn-box button:active {
+    background-color: #614805;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+form input,.todo-button {
+    padding: 0.3rem;
+    font-size: 24px;
+    background: rgba(228, 222, 222, 0.726);
+    outline: none;
+    border: none;
+    border-bottom: rgb(54, 3, 90) solid 4px;
+}
+
+.todo-button {
+    color: rgb(12, 8, 231);
+    background-color: rgba(228, 222, 222, 0.726);
+    cursor: pointer;
+}
+.todo-list {
+    list-style-type: none;
+    min-width: 20%;
+}
+.todo-button:hover {
+    color: white;
+    background-color: rgb(70, 40, 238);
+}
+.todo {
+    background-color: white;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    display: flex;
+    margin: 1rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.todo:hover {
+    box-shadow: rgb(71, 71, 71) 2px 2px 2px 2px;
+}
+
+.todo-item {
+    flex: 1;
+    margin: 0px 8px;
+}
+
+.check-btn {
+    background-color: rgb(27, 156, 16);
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 14px;
+}
+
+.delete-btn {
+    background-color: rgb(247, 75, 104);
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 14px;
+}
+
+.fa-check,
+.fa-trash {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.check-btn:hover {
+    color: white;
+    box-shadow: 3px 3px 3px 3px rgb(5, 5, 5);
+}
+
+.delete-btn:hover {
+    color: white;
+    box-shadow: 3px 3px 3px 3px rgb(5, 5, 5);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My todo multi task list</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="progress"></div>
+            <div class="col"><small>Task list</small></div>
+            <div class="col"><small>Task completed</small></div>
+        </div>
+        <form id="form1">
+            <h3>Tasks list</h3>
+            <div class="my-content">
+                <input class="todo-input" type="text" />
+                <button class="todo-button"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+            </div>
+            <div class="todo-container">
+                <ul class="todo-list">
+                    <!-- will add conttent Dynamically here -->
+                </ul>
+            </div>
+            <div class="btn-box">
+                <button type="button" id="next1">Next</button>
+            </div>
+        </form>
+        <form id="form2">
+            <h3>Tasks completed</h3>
+            <div class="my-content">
+                <input class="todo-input" type="text" />
+                <button class="todo-button"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+            </div>
+            <div class="todo-container">
+                <ul class="todo-list">
+                    <!-- will add conttent Dynamically here -->
+                </ul>
+            </div>
+            <div class="btn-box">
+                <button type="button" id="back2">Back</button>
+            </div>
+        </form>
+    </div>
+    <script src="style.js"></script>
+</body>
+</html>
